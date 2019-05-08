@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/LinearPlayVideo"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/colorwhite"
+            app:cardCornerRadius="4dp"
+            android:elevation="8dp"
+            app:cardElevation="8dp">
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@color/colorwhite"
+                android:padding="2dp"
+                android:id="@+id/youtube_player" />
+        </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="2"
+            android:id="@+id/TextView_Title"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:textColor="@color/colorwhite"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_weight=".5"
+            android:layout_toRightOf="@id/TextView_Title"
+            android:id="@+id/ShareVideo"
+            android:layout_width="25dp"
+            android:layout_marginLeft="6dp"
+            android:layout_gravity="center"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_share_black_24dp" />
+
+            <!--<ImageView-->
+                <!--android:id="@+id/ImageLike"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:layout_gravity="left"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:layout_marginStart="5dp"-->
+                <!--android:background="@drawable/favorite"-->
+                <!--android:padding="5dp" />-->
+
+    </LinearLayout>
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/LinearPlayVideo"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPar"/>
+
+
+
+
+
+</RelativeLayout>

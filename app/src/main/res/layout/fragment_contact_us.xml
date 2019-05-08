@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:background="@drawable/loginbackground"
+    android:layout_height="match_parent"
+    tools:context="algosoftapp.youtube.com.Fragment.ContactUsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:background="@drawable/select_videos_top_bg"
+        android:layout_height="250dp">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:id="@+id/LinearContact"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/Edit_Name"
+            android:hint="Name"
+            android:inputType="text"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorwhite"
+            android:textColorHint="@color/colorwhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/Edit_Email"
+            android:hint="Email Id"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorwhite"
+            android:layout_marginBottom="5dp"
+            android:textColorHint="@color/colorwhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/Edit_Subject"
+            android:inputType="text"
+            android:hint="Subject"
+            android:textColor="@color/colorwhite"
+            android:layout_marginBottom="5dp"
+            android:textColorHint="@color/colorwhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:inputType="text"
+            android:id="@+id/Edit_Message"
+            android:hint="Message"
+            android:textColor="@color/colorwhite"
+            android:layout_marginBottom="5dp"
+            android:textColorHint="@color/colorwhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/Button_submit"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/LinearContact"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:text="Submit"
+        android:textColor="@color/colorwhite"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shapeloginbutton"
+        android:layout_height="40dp" />
+    <LinearLayout
+        android:background="@drawable/select_video_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="40dp">
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

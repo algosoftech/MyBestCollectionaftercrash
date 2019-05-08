@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/loginbackground"
+    android:layout_height="match_parent"
+    tools:context="algosoftapp.youtube.com.YoutubeActivity.PlayVideoList">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/SearchViewStyle">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/Image_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/largeback"/>
+            <TextView
+                android:layout_marginStart="10dp"
+                android:id="@+id/Titlebar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:typeface="sans"
+                android:textSize="18sp"
+                android:text=""
+                android:textColor="@color/colorwhite"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <!--<MultiAutoCompleteTextViewTextView-->
+        <!--android:id="@+id/Search_Hint"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:layout_above="@id/linearLayout2"-->
+        <!--android:layout_below="@id/toolbar"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:autofillHints="@string/SearchHind"-->
+        <!--android:background="@color/ColorBlack"-->
+        <!--android:drawableLeft="@drawable/ic_search_black_24dp"-->
+        <!--android:hint="Search here"-->
+        <!--android:textColorHint="@color/colorwhite"-->
+        <!--android:textColor="@color/colorwhite">-->
+    <!--</MultiAutoCompleteTextViewTextView>-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@drawable/shopping_bg"
+        android:layout_height="250dp"
+        android:id="@+id/linearLayout2">
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/toolbar"
+        android:id="@+id/RecyclerPlayList"
+        android:layout_above="@id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6911912195923365/9213871192">
+    </com.google.android.gms.ads.AdView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/select_video_bottom_bar"
+        android:layout_height="40dp">
+
+    </LinearLayout>
+
+
+
+    <!--<MultiAutoCompleteTextView-->
+        <!--android:id="@+id/Search_Hint"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignTop="@+id/Titlebar"-->
+        <!--android:drawableLeft="@drawable/ic_search_black_24dp"-->
+        <!--android:textColor="@color/colorwhite"-->
+        <!--android:textColorHint="@color/colorwhite" />-->
+</RelativeLayout>

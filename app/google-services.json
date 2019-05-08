@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "108359803235",
+    "firebase_url": "https://mybestcollection-1544593156046.firebaseio.com",
+    "project_id": "mybestcollection-1544593156046",
+    "storage_bucket": "mybestcollection-1544593156046.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108359803235:android:1f1cfbde1d7db11d",
+        "android_client_info": {
+          "package_name": "algosoftapp.youtube.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "108359803235-domfeu4p78i9vqgei54putes91vlt81n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "algosoftapp.youtube.com",
+            "certificate_hash": "fd797b9eabb78fed53b49ca1fe5a60a841376b9b"
+          }
+        },
+        {
+          "client_id": "108359803235-1dglstcoi2m588t7uig339ujlqu61pl2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJQ0lzUo7xN7DCpH-61GmKRqKvLWRxNRA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "108359803235-1dglstcoi2m588t7uig339ujlqu61pl2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

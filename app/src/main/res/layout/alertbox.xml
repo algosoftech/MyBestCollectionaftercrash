@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="100dp">
+    <TextView
+        android:layout_marginTop="-10dp"
+        android:layout_width="match_parent"
+        android:text="Are you sure you want to exit ?"
+        android:textSize="18dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textColor="@color/ColorBlack"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Button_Yes"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:textColor="@color/colorwhite"
+            android:background="@drawable/shapeloginbutton"
+            android:text="Yes" />
+
+        <Button
+            android:id="@+id/Button_No"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:textColor="@color/colorwhite"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/shapeloginbutton"
+            android:text="No" />
+
+    </LinearLayout>
+</LinearLayout>

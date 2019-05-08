@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/Refresh"
+    android:background="@drawable/loginbackground"
+    android:layout_height="match_parent"
+    tools:context="algosoftapp.youtube.Refresh">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="@color/colorwhite"
+            android:id="@+id/Text_View"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <MultiAutoCompleteTextView
+            android:textColor="@color/colorwhite"
+            android:id="@+id/Auto_Complete"
+            android:layout_below="@id/Text_View"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:background="@color/colorwhite"
+            android:layout_below="@+id/Auto_Complete"
+            android:id="@+id/List_View"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/Button"
+            android:layout_height="wrap_content">
+
+        </ListView>
+        <Button
+            android:id="@+id/Button"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+
+
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

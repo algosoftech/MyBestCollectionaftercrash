@@ -1,0 +1,34 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/loginbackground"
+    android:layout_height="match_parent"
+    tools:context="algosoftapp.youtube.com.Fragment.HomeFragment">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/first_layout"
+    android:layout_width="match_parent"
+    android:background="@drawable/select_videos_top_bg"
+    android:layout_height="250dp">
+    </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/Swipe_refresh"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/RecyclerHome"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+    android:background="@drawable/select_video_bottom_bar"
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_height="40dp">
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:background="@drawable/loginbackground"
+    android:layout_height="match_parent"
+    tools:context="algosoftapp.youtube.com.Fragment.FavouritesFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/shopping_bg"
+        android:layout_height="250dp">
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:id="@+id/RecyclerFavourites"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/select_video_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+    </LinearLayout>
+</RelativeLayout>
